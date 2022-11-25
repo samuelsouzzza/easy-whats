@@ -2,6 +2,7 @@
     font-size: 15px;
     --fundodark: #111B21;
     --neutra: #DBE0E2;
+    --neutra2: #dbe0e26e;
     --fundo2: #8696A0;
     --cor1:#128C7E;
     --cor1dark:#075E54;
@@ -16,22 +17,26 @@
 body{
     background: var(--fundodark);
 }
+
 .wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 5%;
-    background-color: #075E54;
+    border: 1px solid var(--neutra2 );
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    justify-content:center;
 }
-.txt-number,
+.txt-numero,
 .btn-iniciar{
     width: 80%;
     color: var(--neutra);
     font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
 }
-.txt-number{
+.txt-numero{
     background: var(--fundodark);
     border: 1px solid var(--fundo2);
     height: 3.25rem;
@@ -39,7 +44,11 @@ body{
     padding: 5%;
     outline: 0;
 }
+.txt-numero::placeholder{
+    color: var(--fundo2);
+}
 .btn-iniciar{
+    text-decoration: none;
     background: var(--cor2);
     color: var(--neutra);
     border: 0;
