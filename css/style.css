@@ -1,4 +1,5 @@
 :root{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     --fundodark: #111B21;
     --neutra: #DBE0E2;
@@ -17,12 +18,23 @@
 body{
     background: var(--fundodark);
 }
-
+header{
+    background:var(--cor1dark);
+    color: var(--neutra);
+    height: auto;
+    font-size: 1.75rem;
+    padding: 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-gear{
+    color: var(--neutra);
+}
 .wrapper{
     width: 100%;
     height: 100vh;
     padding: 5%;
-    border: 1px solid var(--neutra2 );
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -49,7 +61,7 @@ body{
 }
 .btn-iniciar{
     text-decoration: none;
-    background: var(--cor2);
+    background: var(--cor1);
     color: var(--neutra);
     border: 0;
     height: 2.5rem;
