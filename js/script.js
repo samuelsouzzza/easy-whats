@@ -26,8 +26,9 @@ const pnt = document.querySelector('.fa-ellipsis-vertical');
 function mostrarOpcoesNovaConversa(){
    const opc = document.querySelector('.opcoes-nova-conversa');
    function fechar(e){
-      if(!opc.contains(e.target))opc.classList.remove('ativo');
-      console.log(e.target);
+      if(!pnt.contains(e.target))opc.classList.remove('ativo');
+    //   console.log(e.target);
+    console.log('oi');
    }
    window.addEventListener('click', fechar);
    opc.classList.add('ativo');
