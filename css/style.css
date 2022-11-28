@@ -33,7 +33,7 @@ header{
 }
 .wrapper{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ header{
 }
 .btn-iniciar{
     text-decoration: none;
-    background: var(--cor1);
+    background: var(--cor1dark);
     color: var(--neutra);
     border: 0;
     height: 2.5rem;
