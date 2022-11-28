@@ -22,7 +22,7 @@ header{
     background:var(--cor1dark);
     color: var(--neutra);
     height: auto;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     padding: 3% 5%;
     display: flex;
     align-items: center;
@@ -74,4 +74,12 @@ header{
     color: var(--neutra);
     border: 0;
     height: 2.5rem;
+}
+footer{
+   height: 40px;
+   width: 100%;
+   display: block;
+   background: var(--cor1dark);
+   position: fixed;
+   bottom: 0;
 }
