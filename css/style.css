@@ -22,14 +22,11 @@ header{
     background:var(--cor1dark);
     color: var(--neutra);
     height: auto;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: 3% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.fa-gear{
-    color: var(--neutra);
 }
 .wrapper{
     width: 100%;
@@ -76,10 +73,15 @@ header{
     height: 2.5rem;
 }
 footer{
-   height: 40px;
+   font-size: 1.75rem;
+   color: var(--neutra);
+   height: 50px;
    width: 100%;
-   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
    background: var(--cor1dark);
    position: fixed;
+   z-index: -1;
    bottom: 0;
 }
