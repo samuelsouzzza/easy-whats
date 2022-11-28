@@ -1,4 +1,4 @@
-
+// NOVA CONVERSA PRONTA
 const btn = document.querySelector('.btn-iniciar');
 const txt = document.querySelector('.txt-numero');
 function iniciarConversa(){
@@ -20,3 +20,16 @@ function mascara(){
     }
 }
 txt.addEventListener('keypress', mascara);
+
+// MENU DE OPÇÕES - NOVA CONVERSA
+const pnt = document.querySelector('.fa-ellipsis-vertical');
+function mostrarOpcoesNovaConversa(){
+   const opc = document.querySelector('.opcoes-nova-conversa');
+   function fechar(e){
+      if(!opc.contains(e.target))opc.classList.remove('ativo');
+      console.log(e.target);
+   }
+   window.addEventListener('click', fechar);
+   opc.classList.add('ativo');
+}
+pnt.addEventListener('click', mostrarOpcoesNovaConversa);

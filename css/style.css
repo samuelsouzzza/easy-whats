@@ -1,6 +1,7 @@
 :root{
-      font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
+    color: var(--neutra);
     --fundodark: #111B21;
     --neutra: #DBE0E2;
     --neutra2: #dbe0e26e;
@@ -14,6 +15,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    list-style: none;
 }
 body{
     background: var(--fundodark);
@@ -27,6 +29,31 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.opcoes-nova-conversa{
+   display: none;
+}
+.opcoes-nova-conversa.ativo{
+   background: var(--fundodark);
+   border: 1px solid var(--neutra2);
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   position: absolute;
+   padding: 2%;
+   right: 0;
+   animation: mostrarOpcoes .5s forwards;
+}
+@keyframes mostrarOpcoes{
+   from{
+      filter: opacity(0);
+   }
+   to{
+      filter: opacity(1);
+   }
+}
+ul li{
+   margin: 7% 0;
 }
 .wrapper{
     width: 100%;
@@ -72,7 +99,7 @@ header{
     border: 0;
     height: 2.5rem;
 }
-footer{
+nav{
    font-size: 1.75rem;
    color: var(--neutra);
    height: 50px;
